@@ -30,7 +30,7 @@ export const POSTS_ACTION_TYPES = {
         .get("http://jsonplaceholder.typicode.com/posts")
         .then((res) => {
           if (res) {
-            dispatch(onFetchPostsSuccess(res.data.splice(0, 5),));
+            dispatch(onFetchPostsSuccess(res.data.splice(0, 6),));
            
           } else {
            console.log(res.data)
